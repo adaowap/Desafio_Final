@@ -16,10 +16,10 @@ import java.time.LocalDateTime;
 @Entity
 @Table(name = "TB_EMAIL")
 public class EmailSend implements Serializable {
-    private static final long serialVersionLONG = 1L;
+
 
     @Id
-    @GeneratedValue(strategy= GenerationType.AUTO)
+    @GeneratedValue(strategy= GenerationType.IDENTITY)
     private Long emailId;
     private String ownerRef;
     private String emailFrom;
